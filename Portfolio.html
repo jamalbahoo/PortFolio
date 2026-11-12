@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            padding: 8px 18px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-outline:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            font-weight: 500;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            color: #f8fafc;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .contact-card p {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Jamal</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">My Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h1>Hi, I'm Jamal</h1>
+        <p>Frontend Web Developer & Tech Enthusiast</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5 & CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">UI / UX Design</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Responsive Design</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div>
+                    <h3>Business Landing Page</h3>
+                    <p>A modern, high-converting landing page crafted with clean HTML, CSS, and responsive layout.</p>
+                </div>
+                <a href="https://jb-store.netlify.app/" target="_blank" class="btn-outline">View Project</a>
+            </div>
+            <div class="project-card">
+                <div>
+                    <h3>E-Commerce Web Layout</h3>
+                    <p>An interactive dynamic clothing store interface built using modern JavaScript and custom web rendering features.</p>
+                </div>
+                <a href="#" target="_blank" class="btn-outline">Coming Soon</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-card">
+            <p>Let's build something awesome together. Feel free to reach out via email!</p>
+            <a href="mailto:jamalbahoo15@gmail.com" class="btn">Send Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Faiz. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
